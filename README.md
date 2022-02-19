@@ -7,11 +7,20 @@ Designed to closely resemble the official Go client for Mongo, so that migrating
 - Request parameters are defined with bson primitives
 - BSON tags used in decode methods when unmarshalling responses
 
-**Extremely work-in-progress**
+## Warning
 
-Right now only `findOne` action is implemented!
+This is **extremely work-in-progress** - right now only the `findOne` action is implemented!
 
-### Example:
+## Why might you want this?
+
+If...
+
+- you write Lambda functions in Go (other serverless function services are available...)
+- that connect to a Mongo database
+- and you get a lot of traffic so lots of Lambas are running
+- and you are worried about having too many database connections
+
+## Example:
 
 ```go
 type User struct {
