@@ -3,14 +3,9 @@ package mongoapi
 import (
 	"context"
 	"encoding/json"
-	"errors"
 	"fmt"
 
 	"go.mongodb.org/mongo-driver/bson"
-)
-
-var (
-	ErrNoDocuments = errors.New("mongoapi: no documents found in result")
 )
 
 type FindOneResponse struct {

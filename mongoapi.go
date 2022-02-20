@@ -3,6 +3,7 @@ package mongoapi
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -14,6 +15,11 @@ import (
 
 const (
 	ActionFindOne = "findOne"
+	ActionFind    = "find"
+)
+
+var (
+	ErrNoDocuments = errors.New("mongoapi: no documents found in result")
 )
 
 type Client struct {
