@@ -1,15 +1,15 @@
-# Mongo Data API Go client
+# MongoDV Data API Go client
 
-Go client for the [Mongo Data API](https://docs.atlas.mongodb.com/api/data-api/).
+Go client for the [MongoDB Data API](https://docs.atlas.mongodb.com/api/data-api/).
 
-Designed to closely resemble the official Go client for Mongo, so that migrating or sharing code between the two clients is as simple as possible.
+Designed to closely resemble the official Go client for MongoDB, so that migrating or sharing code between the two clients is as simple as possible.
 
 - Request parameters are defined with bson primitives
 - BSON tags used in decode methods when unmarshalling responses
 
 ## Warning
 
-This is **extremely work-in-progress** - right now only the `findOne` action is implemented!
+This is **extremely work-in-progress** - right now only the `findOne` and `find` actions are implemented!
 
 ## Why might you want this?
 
